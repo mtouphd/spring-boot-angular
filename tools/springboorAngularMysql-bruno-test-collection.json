@@ -1,0 +1,100 @@
+{
+  "name": "SpringboorAngularMysql",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "TutorialById",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8080/api/tutorials/{id}",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "AllTutorial",
+      "seq": 3,
+      "request": {
+        "url": "{{host}}/api/tutorials",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "AddTutorial",
+      "seq": 4,
+      "request": {
+        "url": "{{host}}/api/tutorials",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"title\":\"les mesirable\",\n  \"description\":\"les mesirable\",\n  \"published\":\"false\"\n  \n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "activeEnvironmentUid": "lDRtOWCbquO6K5WSi8w35",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "host",
+          "value": "http://localhost:8080",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "dev"
+    }
+  ],
+  "brunoConfig": {
+    "version": "1",
+    "name": "SpringboorAngularMysql",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
